@@ -51,13 +51,13 @@ Traditional approaches fail:
 
 | Stage | Project | Commitment |
 |-------|---------|------------|
-| 0 | [certifiable-data](https://github.com/williamofai/certifiable-data) | Merkle root of batches |
-| 1 | [certifiable-training](https://github.com/williamofai/certifiable-training) | Training chain hash |
-| 2 | [certifiable-quant](https://github.com/williamofai/certifiable-quant) | Quantization certificate |
-| 3 | [certifiable-deploy](https://github.com/williamofai/certifiable-deploy) | Attestation root |
-| 4 | [certifiable-inference](https://github.com/williamofai/certifiable-inference) | Predictions hash |
-| 5 | [certifiable-monitor](https://github.com/williamofai/certifiable-monitor) | Ledger digest |
-| 6 | [certifiable-verify](https://github.com/williamofai/certifiable-verify) | Report hash |
+| 0 | [certifiable-data](https://github.com/SpeyTech/certifiable-data) | Merkle root of batches |
+| 1 | [certifiable-training](https://github.com/SpeyTech/certifiable-training) | Training chain hash |
+| 2 | [certifiable-quant](https://github.com/SpeyTech/certifiable-quant) | Quantization certificate |
+| 3 | [certifiable-deploy](https://github.com/SpeyTech/certifiable-deploy) | Attestation root |
+| 4 | [certifiable-inference](https://github.com/SpeyTech/certifiable-inference) | Predictions hash |
+| 5 | [certifiable-monitor](https://github.com/SpeyTech/certifiable-monitor) | Ledger digest |
+| 6 | [certifiable-verify](https://github.com/SpeyTech/certifiable-verify) | Report hash |
 
 Each stage produces exactly one 32-byte SHA-256 commitment. If any stage produces a different hash on different hardware, the pipeline identifies exactly where determinism broke down.
 
@@ -272,13 +272,13 @@ Test project /home/william/certifiable-harness/build
 
 | Project | Purpose |
 |---------|---------|
-| [certifiable-data](https://github.com/williamofai/certifiable-data) | Deterministic data pipeline |
-| [certifiable-training](https://github.com/williamofai/certifiable-training) | Deterministic training |
-| [certifiable-quant](https://github.com/williamofai/certifiable-quant) | Model quantization |
-| [certifiable-deploy](https://github.com/williamofai/certifiable-deploy) | Bundle packaging |
-| [certifiable-inference](https://github.com/williamofai/certifiable-inference) | Fixed-point inference |
-| [certifiable-monitor](https://github.com/williamofai/certifiable-monitor) | Runtime monitoring |
-| [certifiable-verify](https://github.com/williamofai/certifiable-verify) | Pipeline verification |
+| [certifiable-data](https://github.com/SpeyTech/certifiable-data) | Deterministic data pipeline |
+| [certifiable-training](https://github.com/SpeyTech/certifiable-training) | Deterministic training |
+| [certifiable-quant](https://github.com/SpeyTech/certifiable-quant) | Model quantization |
+| [certifiable-deploy](https://github.com/SpeyTech/certifiable-deploy) | Bundle packaging |
+| [certifiable-inference](https://github.com/SpeyTech/certifiable-inference) | Fixed-point inference |
+| [certifiable-monitor](https://github.com/SpeyTech/certifiable-monitor) | Runtime monitoring |
+| [certifiable-verify](https://github.com/SpeyTech/certifiable-verify) | Pipeline verification |
 
 ---
 
@@ -305,7 +305,7 @@ All contributions require a signed Contributor License Agreement.
 
 **William Murray**  
 The Murray Family Innovation Trust  
-[SpeyTech](https://speytech.com) · [GitHub](https://github.com/williamofai)
+[SpeyTech](https://speytech.com) · [GitHub](https://github.com/SpeyTech)
 
 ---
 
