@@ -1,0 +1,22 @@
+import ch = certifiable-harness%liba{certifiable-harness}
+
+tests = exe{ \
+  certifiable_harness_test_golden \
+  certifiable_harness_test_harness \
+  certifiable_harness_test_report \
+  certifiable_harness_test_stages \
+  }
+
+exe{certifiable_harness_test_golden}: c{test_golden} $ch
+exe{certifiable_harness_test_harness}: c{test_harness} $ch
+exe{certifiable_harness_test_report}: c{test_report} $ch
+exe{certifiable_harness_test_stages}: c{test_stages} $ch
+
+$tests:
+{
+  c.coptions += -UNDEBUG
+  c.libs += -lm
+  test = true
+}
+
+./: $tests

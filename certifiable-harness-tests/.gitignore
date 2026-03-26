@@ -35,24 +35,12 @@
 *.exe.manifest
 *.pc
 
-# Editor files
-*.swp
-*.swo
-*~
-.vscode/
-.idea/
-
-# OS files
-.DS_Store
-Thumbs.db
-
 # Test outputs
-*.json
-*.golden
-*.bin
+/static/*.txt
+/benchmarks/results/
 
-# Coverage
-*.gcov
-*.gcda
-*.gcno
-coverage/
+# Build2 symlinks exes from build dir to src dir for convenient
+/unit/certifiable_harness_test_golden
+/unit/certifiable_harness_test_harness
+/unit/certifiable_harness_test_report
+/unit/certifiable_harness_test_stages

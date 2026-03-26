@@ -1,0 +1,14 @@
+./: liba{certifiable-harness} \
+    doc{README.md} \
+    legal{LICENSE} \
+    manifest
+
+liba{certifiable-harness}: \
+  c{src/**} \
+  h{include/*}
+{
+  dist = true
+  export = true
+}
+
+liba{certifiable-harness}: c.export.poptions = "-I$src_root/include"

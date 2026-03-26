@@ -1,9 +1,0 @@
-liba{certifiable_harness}: \
-  c{**.c} \
-  h{../include/**.h}
-{
-  export = true
-  install = true
-}
-
-./: liba{certifiable_harness}
